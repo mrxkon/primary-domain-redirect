@@ -4,7 +4,7 @@ WordPress Core understands multiple Domains while in a Multisite setup and redir
 
 There are plenty of server setups out there which are utilizing Nginx / CNAMEs etc that can end up on multiple domains not being redirected.
 
-This will help on efficiently redirect all domains to whatever is set as a home url in WordPress.
+This `mu-plugin` will help on efficiently redirect all domains to whatever is set as a home url in WordPress.
 
 This mu-plugin was made while testing out theories on my WPMU DEV hosted website and it utilizes some extra constants that are found on these environments. You can use the same structure but you should alter the code to match your hosting regarding possible staging environments or temporary domains.
 
