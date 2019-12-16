@@ -1,5 +1,7 @@
 # primary-domain-redirect
 
+## Redirect all the additional domains to the domain that is set as home url in WordPress.
+
 ![Tests](https://github.com/mrxkon/primary-domain-redirect/workflows/Tests/badge.svg)
 [![PHP Compatibility 7.0+](https://img.shields.io/badge/PHP%20Compatibility-7.0+-8892BF)](https://github.com/PHPCompatibility/PHPCompatibility)
 [![WordPress Coding Standards](https://img.shields.io/badge/WordPress%20Coding%20Standards-latest-blue)](https://github.com/WordPress/WordPress-Coding-Standards)
@@ -8,7 +10,7 @@
  [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mrxkon_primary-domain-redirect&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mrxkon_primary-domain-redirect) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mrxkon_primary-domain-redirect&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=mrxkon_primary-domain-redirect)
 
 
-[![My Website](https://img.shields.io/badge/My-Website-orange.svg)](https://xkon.gr)  [![WordPress Profile](https://img.shields.io/badge/WordPress-Profile-blue.svg)](https://profiles.wordpress.org/xkon)
+[![My Website](https://img.shields.io/badge/My-Website-orange.svg)](https://xkon.gr)  [![WordPress Profile](https://img.shields.io/badge/WordPress-Profile-blue.svg)](https://profiles.wordpress.org/xkon) [![PRs Welcomed](https://img.shields.io/badge/PRs-Welcomed%20!-brightgreen)](https://github.com/mrxkon/primary-domain-redirect/pulls)
 
 [![Built for WordPress](https://img.shields.io/badge/built%20for-WordPress-blue)](https://wordpress.org) [![Built for WPMU DEV](https://img.shields.io/badge/built%20for-WPMU%20DEV-blue)](https://premium.wpmudev.org/)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2+-red)](http://www.gnu.org/licenses/gpl-2.0.html)
