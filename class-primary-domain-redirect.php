@@ -76,10 +76,10 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 				// Find the URI of the request.
 				$request_uri = $_SERVER['REQUEST_URI'];
 
-				// If our primary domain is not a wpmudev.host domain
+				// If our primary domain is not a temporary domain.
 				if ( ! preg_match( $temp_domain, $primary_domain ) ) {
 
-					// If the request domain is a wpmudev.host domain or if it's not the same as the primary then redirect
+					// If the request domain is a temporary domain or if it's not the same as the primary then redirect.
 					if ( preg_match( $temp_domain, $request_domain ) || $primary_domain !== $request_domain ) {
 
 						// Pass the Redirect by WP header.
