@@ -50,7 +50,7 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 		}
 
 		public function __construct() {
-			add_action( 'muplugins_loaded', $this->redirect() );
+			add_action( 'plugins_loaded', $this->redirect() );
 		}
 
 		public static function redirect() {
@@ -81,14 +81,7 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 
 					// If the request domain is a temporary domain or if it's not the same as the primary then redirect.
 					if ( preg_match( $temp_domain, $request_domain ) || $primary_domain !== $request_domain ) {
-
-						// Pass the Redirect by WP header.
-						header( 'X-Redirect-By: WordPress' );
-
-						// Pass the Redirect header.
-						header( "Location: https://$primary_domain$request_uri", true, 301 );
-
-						// Exit always follows a redirect header.
+						wp_safe_redirect( 'https://' . $primary_domain . $request_uri, 301, 'WordPress' );
 						exit;
 					}
 				}
@@ -100,6 +93,6 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 		function primary_domain_redirect() {
 			return Primary_Domain_Redirect::get_instance();
 		}
-		add_action( 'muplugins_loaded', 'primary_domain_redirect', 10 );
+		add_action( 'plugins_loaded', 'primary_domain_redirect', 10 );
 	}
 }
