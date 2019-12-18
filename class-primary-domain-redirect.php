@@ -54,6 +54,11 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 		}
 
 		public static function redirect() {
+			// No need to do anything if the request is via WP-CLI.
+			if ( defined( 'WP_CLI' ) && WP_CLI ) {
+				return;
+			}
+
 			// Set temporary domain to avoid redirect.
 			$temp_domain = "/\bwpmudev.host\b/i";
 
