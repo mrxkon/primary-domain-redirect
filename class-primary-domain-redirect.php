@@ -50,7 +50,7 @@ if ( ! class_exists( 'Primary_Domain_Redirect' ) ) {
 		}
 
 		public function __construct() {
-			add_action( 'plugins_loaded', $this->redirect() );
+			$this->redirect();
 		}
 
 		public static function redirect() {
